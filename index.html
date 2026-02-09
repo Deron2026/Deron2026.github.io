@@ -1,312 +1,57 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deron AI - AI 技术评论与洞察</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: #333;
-      line-height: 1.6;
-    }
-    
-    header {
-      background: rgba(0, 0, 0, 0.8);
-      color: #fff;
-      padding: 2rem 0;
-      border-bottom: 3px solid #667eea;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    
-    header .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 2rem;
-    }
-    
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      transition: color 0.3s;
-      font-weight: 500;
-    }
-    
-    nav a:hover {
-      color: #667eea;
-    }
-    
-    .hero {
-      background: white;
-      padding: 4rem 0;
-      text-align: center;
-      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-    }
-    
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      color: #667eea;
-    }
-    
-    .hero p {
-      font-size: 1.2rem;
-      color: #666;
-      margin-bottom: 2rem;
-    }
-    
-    .cta-button {
-      display: inline-block;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: 12px 30px;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: transform 0.3s, box-shadow 0.3s;
-      font-weight: bold;
-    }
-    
-    .cta-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-    }
-    
-    .articles-section {
-      padding: 4rem 0;
-    }
-    
-    .section-title {
-      font-size: 2rem;
-      color: white;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-    
-    .articles-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-bottom: 3rem;
-    }
-    
-    .article-card {
-      background: white;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    
-    .article-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    }
-    
-    .article-tag {
-      background: #667eea;
-      color: white;
-      padding: 0.5rem 1rem;
-      font-size: 0.85rem;
-      font-weight: bold;
-      display: inline-block;
-      margin: 1rem 1rem 0 1rem;
-    }
-    
-    .article-card h3 {
-      padding: 1.5rem 1.5rem 0 1.5rem;
-      color: #333;
-      font-size: 1.3rem;
-    }
-    
-    .article-card p {
-      padding: 0.5rem 1.5rem;
-      color: #666;
-      font-size: 0.95rem;
-    }
-    
-    .article-date {
-      padding: 0.5rem 1.5rem;
-      color: #999;
-      font-size: 0.85rem;
-    }
-    
-    .article-link {
-      display: inline-block;
-      padding: 1.5rem;
-      color: #667eea;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    
-    .article-link:hover {
-      color: #764ba2;
-    }
-    
-    footer {
-      background: rgba(0, 0, 0, 0.9);
-      color: #fff;
-      text-align: center;
-      padding: 2rem 0;
-      border-top: 3px solid #667eea;
-    }
-    
-    footer p {
-      margin-bottom: 0.5rem;
-    }
-    
-    .footer-links {
-      margin-top: 1rem;
-    }
-    
-    .footer-links a {
-      color: #667eea;
-      text-decoration: none;
-      margin: 0 1rem;
-      transition: color 0.3s;
-    }
-    
-    .footer-links a:hover {
-      color: #fff;
-    }
-    
-    @media (max-width: 768px) {
-      header .container {
-        flex-direction: column;
-        gap: 1rem;
-      }
-      
-      nav ul {
-        gap: 1rem;
-      }
-      
-      .hero h1 {
-        font-size: 2rem;
-      }
-      
-      .articles-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deron2026 News Portal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="logo">🤖 Deron AI</div>
-      <nav>
-        <ul>
-          <li><a href="#latest">最新评论</a></li>
-          <li><a href="#about">关于我们</a></li>
-          <li><a href="#contact">联系方式</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="container">
-      <h1>AI 技术评论与洞察</h1>
-      <p>深入分析最新的人工智能技术发展趋势和应用创新</p>
-      <p style="font-size: 1rem; color: #999; margin-top: 1rem;">每日更新 | 专业评论 | 行业洞察</p>
-    </div>
-  </section>
-
-  <section class="articles-section" id="latest">
-    <div class="container">
-      <h2 class="section-title">📰 最新评论</h2>
-      <div class="articles-grid">
-        <div class="article-card">
-          <span class="article-tag">大模型</span>
-          <h3>2026 年 AI 大模型发展预测</h3>
-          <p class="article-date">2026 年 2 月 9 日</p>
-          <p>探讨多模态大模型、推理能力增强等方向...</p>
-          <a href="#" class="article-link">阅读全文 →</a>
-        </div>
-
-        <div class="article-card">
-          <span class="article-tag">应用实践</span>
-          <h3>企业 AI 集成最佳实践</h3>
-          <p class="article-date">2026 年 2 月 8 日</p>
-          <p>深入探讨如何在企业中有效集成和应用 AI 技术...</p>
-          <a href="#" class="article-link">阅读全文 →</a>
-        </div>
-
-        <div class="article-card">
-          <span class="article-tag">技术分析</span>
-          <h3>开源 AI 模型生态观察</h3>
-          <p class="article-date">2026 年 2 月 7 日</p>
-          <p>对当前开源 AI 模型的发展现状和未来趋势分析...</p>
-          <a href="#" class="article-link">阅读全文 →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="articles-section" style="background: rgba(0, 0, 0, 0.1); padding: 4rem 0;">
-    <div class="container">
-      <h2 class="section-title">🚀 热门话题</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; color: white;">
-        <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧠</div>
-          <h3>神经网络架构</h3>
-        </div>
-        <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
-          <h3>高效推理</h3>
-        </div>
-        <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔐</div>
-          <h3>AI 安全性</h3>
-        </div>
-        <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 8px; text-align: center;">
-          <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
-          <h3>数据优化</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer id="contact">
-    <div class="container">
-      <p><strong>Deron AI 技术评论平台</strong></p>
-      <p>专注于人工智能技术的深度分析和评论</p>
-      <div class="footer-links">
-        <a href="#">GitHub</a>
-        <a href="#">Twitter</a>
-        <a href="#">RSS</a>
-        <a href="#">邮件订阅</a>
-      </div>
-      <p style="margin-top: 1.5rem; font-size: 0.9rem;">© 2026 Deron AI. 保留所有权利。</p>
-    </div>
-  </footer>
+    <header class="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AI_news_list_analysis_2026-02-09.html">📊 新闻分析</a></li>
+                <li><a href="joke-generator.html">😂 笑话生成</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Deron2026 News Portal</h1>
+            <p>Stay updated with the latest news!</p>
+            <a href="#" class="cta-button">Explore Now</a>
+        </section>
+        <section class="news-highlights">
+            <h2>News Highlights</h2>
+            <div class="news-card">
+                <h3><a href="analysis-page.html">News Title 1</a></h3>
+                <p>Summary of news article 1...</p>
+            </div>
+            <div class="news-card">
+                <h3><a href="analysis-page.html">News Title 2</a></h3>
+                <p>Summary of news article 2...</p>
+            </div>
+        </section>
+        <section class="expanded-articles">
+            <h2>Expanded Articles</h2>
+            <article>
+                <h3><a href="article1.html">Article Title 1</a></h3>
+                <p>Full article content...</p>
+            </article>
+            <article>
+                <h3><a href="article2.html">Article Title 2</a></h3>
+                <p>Full article content...</p>
+            </article>
+        </section>
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Learn more about our platform features...</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Deron2026. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
